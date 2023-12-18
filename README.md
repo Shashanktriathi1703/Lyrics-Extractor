@@ -47,7 +47,8 @@ The application requires the following configurations:
 2. Sign up for a new account or log in with existing credentials.
 3. Use the music extraction feature to search for and retrieve music-related information using the `Genius API`.
 
-## Demo 
+## Demo
+
 - Signup 
 ![Screenshot 2023-10-08 121419](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/857844e6-5e73-4e68-a75e-731fb73ab2f9)
 
