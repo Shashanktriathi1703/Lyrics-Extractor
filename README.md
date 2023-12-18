@@ -49,13 +49,16 @@ The application requires the following configurations:
 
 ## Demo
 
-- Signup 
+- Signup
+
 ![Screenshot 2023-10-08 121419](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/857844e6-5e73-4e68-a75e-731fb73ab2f9)
 
 - Login
+  
 ![Screenshot 2023-10-08 121518](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/a0b8327b-19c1-4907-81b6-49f58c56cb97)
 
 - Music-Extractor
+  
 ![Screenshot 2023-10-09 000654](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/bee25bec-ee9a-4a38-97b2-9966ea8be7b2)
 
 ## Contributors
