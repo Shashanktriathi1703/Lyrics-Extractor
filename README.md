@@ -45,11 +45,11 @@ The application requires the following configurations:
 
 ## Contributors
 
-- [SHASHANK TRIPATHI]
+- `SHASHANK TRIPATHI`
 
 ## License
 
-This project is licensed under the [LI-MAT SOLUTION] License - see the LICENSE file for details.
+This project is licensed under the `LI-MAT SOLUTION` License - see the LICENSE file for details.
 
 ## Acknowledgements
 
