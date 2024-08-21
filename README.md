@@ -1,11 +1,11 @@
-# Music-Extractor
+# Lyrics-Extractor
 
-Music-Extractor is a Python application that utilizes Python Tkinter for the user interface, MySQL for database connectivity, and the Genius API for music extraction. This application allows users to sign up, log in, and access music-related information using the Genius API.
+Lyrics-Extractor is a Python application that utilizes Python Tkinter for the user interface, MySQL for database connectivity, and the Genius API for music extraction. This application allows users to sign up, log in, and access music-related information using the Genius API.
 
 ## Features
 
 - User Authentication: New users can easily sign up for an account, and existing users can log in to access the application's features.
-- Music Extraction: The application integrates with the Genius API to extract music-related information such as lyrics, artist details, and song details.
+- Lyrics Extraction: The application integrates with the Genius API to extract music-related information such as lyrics, artist details, and song details.
 - Database Connectivity: MySQL is used to store user information and authentication details securely.
 
 ## Requirements
@@ -17,7 +17,7 @@ Music-Extractor is a Python application that utilizes Python Tkinter for the use
 
 ## Installation and Setup
 
-1. Clone the Music-Extractor repository from GitHub.
+1. Clone the Lyrics-Extractor repository from GitHub.
 2. Install the required dependencies using `pip install -r requirements.txt`.
 3. Set up a MySQL database for the application and update the database connection details in the configuration files.
 4. Obtain a Genius API access token and update the application with the token for music extraction.
