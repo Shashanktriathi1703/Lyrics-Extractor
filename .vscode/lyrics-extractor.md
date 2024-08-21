@@ -58,7 +58,7 @@ def send_otp(email):
       port = 465 #For SSL
       smtp_server = "smtp.gmail.com"
       sender_email = "example@gmail.com"
-      password = "example-password"ymll luhd vuqm ardq
+      password = "example-password"
 
       otp = ''.join([str(random.randint(0, 9)) for i in range(6)])
       message = f"""\
@@ -195,7 +195,7 @@ def login():
             def extract_lyrics():
                         song_name = song_entry.get()
                         artist_name = artist_entry.get()
-                        genius = lyricsgenius.Genius("AIzaSyAjxGRJlw3vH6V2nUvjgtEnvSFah8A4wH8")  # Replace with your own Genius API key
+                        genius = lyricsgenius.Genius("")  # Replace with your own Genius API key
                         song = genius.search_song(song_name, artist_name)
                         lyrics_text.delete("1.0", END)  # Clear previous lyrics
                         if song is not None:
