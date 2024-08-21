@@ -10,7 +10,7 @@ from tkinter import messagebox
 import tkinter
 import mysql.connector as msl
 import lyricsgenius
-from PIL import Image, ImageTk #Python Imaging Library
+from PIL import Image, ImageTk
 root = Tk()
 
 conn = msl.connect(host = "localhost", port = 3307, user = "root", password = "")
@@ -55,10 +55,10 @@ def validate_email(user_gmail):
     return False
 
 def send_otp(email):
-      port = 465 # For SSL(Secure Sockets Layer)/TLS(Transport Layer Security), are used to secure data transmission and establish a secure connection between a client and server, providing encryption, data integrity, and authentication. 
+      port = 465 #For SSL
       smtp_server = "smtp.gmail.com"
-      sender_email = "shashanktripathi1703@gmail.com"
-      password = "" # Write gmail password
+      sender_email = "example@gmail.com"
+      password = "example-password"ymll luhd vuqm ardq
 
       otp = ''.join([str(random.randint(0, 9)) for i in range(6)])
       message = f"""\
@@ -124,7 +124,7 @@ def fun():
                         user_id = user_row[0]  # Assuming user_id is the first column in the row
                         song_name = song_entry.get()
                         artist_name = artist_entry.get()
-                        genius = lyricsgenius.Genius("")  # Replace with your own Genius API key
+                        genius = lyricsgenius.Genius("AIzaSyAjxGRJlw3vH6V2nUvjgtEnvSFah8A4wH8")  # Replace with your own Genius API key
                         song = genius.search_song(song_name, artist_name)
                         lyrics_text.delete("1.0", END)  # Clear previous lyrics
                         if song is not None:
@@ -183,10 +183,10 @@ def login():
     root.destroy()
     win = Tk()
     def verify():
-        # un = user_n_text.get()
+        un = user_n_text.get()
         ug = user_g_text.get()
         up = user_pass_text.get()
-        c.execute("SELECT * FROM sign_up WHERE GMAIL = %s AND Password = %s", (ug, up))
+        c.execute("SELECT * FROM sign_up WHERE Name = %s AND GMAIL = %s AND Password = %s", (un, ug, up))
         result = c.fetchone()
         if result:
             user_id = result[0]
@@ -234,12 +234,12 @@ def login():
         else:
             win.configure(bg="red")
             head_top.configure(bg="red",fg="black")
-            # user_name.configure(bg="red",fg="black")
+            user_name.configure(bg="red",fg="black")
             user_gmail.configure(bg="red",fg="black")
             user_pass.configure(bg="red",fg="black")
             btn_submit.configure(fg="white")
             Label(win, text="Login UnSuccesfully", font=("cambria", 12, "bold"), bg="red", fg="white").place(x=380, y=350)
-            messagebox.showwarning("Login UnSuccesfully", "Email and Password do not match. Please re-enter the Email and Password correctly.")
+            messagebox.showwarning("Login UnSuccesfully", "User-Name, Email and Password do not match. Please re-enter the User-Name, Email and Password correctly.")
     win.title("LOGIN-FORM")
     win.geometry("600x400+500+200")
     icon_image = Image.open(r'C:\Users\DELL\Downloads\_7160e592-7d9c-47e8-8bb6-56a85dd5dbd1.jpeg')
@@ -251,20 +251,20 @@ def login():
     head_top = Label(win, font=f_login, text = "LOGIN-FORM", bg="#15133C", fg="#FFE15D")
     head_top.place(x=170, y=10)
     f_login_text = ("cambria", 20, "bold")
-    # user_name = Label(win, font=f_login_text, text = "USER-NAME", bg="#46C2CB", fg="#15133C")
-    # user_name.place(x = 40, y = 110)
-    # user_n_text = Entry(win, font=f_login_text)
-    # user_n_text.place(x = 210, y = 110)
+    user_name = Label(win, font=f_login_text, text = "USER-NAME", bg="#46C2CB", fg="#15133C")
+    user_name.place(x = 40, y = 110)
+    user_n_text = Entry(win, font=f_login_text)
+    user_n_text.place(x = 210, y = 110)
     user_gmail = Label(win, font=f_login_text, text="GMAIL", bg="#46C2CB", fg="#15133C")
-    user_gmail.place(x = 40, y = 130)
+    user_gmail.place(x = 40, y = 180)
     user_g_text = Entry(win, font=f_login_text)
-    user_g_text.place(x = 210, y = 130)
+    user_g_text.place(x = 210, y = 180)
     user_pass = Label(win, font=f_login_text, text = "PASSWORD", bg="#46C2CB", fg="#15133C")
-    user_pass.place(x = 40, y = 200)
+    user_pass.place(x = 40, y = 250)
     user_pass_text = Entry(win, font=f_login_text, show='*')
-    user_pass_text.place(x = 210, y = 200)
+    user_pass_text.place(x = 210, y = 250)
     btn_submit = Button(win, font = f_text, text="SUBMIT", bg="#15133C", fg="#FFE15D", command=verify)
-    btn_submit.place(x=250, y=290)
+    btn_submit.place(x=250, y=320)
     win.mainloop()
 
 
