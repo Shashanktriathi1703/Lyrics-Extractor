@@ -55,8 +55,8 @@ The application requires the following configurations:
 ![Screenshot 2023-10-08 121419](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/857844e6-5e73-4e68-a75e-731fb73ab2f9)
 
 - OTP
-![otp](https://github.com/user-attachments/assets/d8e1f002-9568-4f90-9e1c-71abb1faf198)
 
+![otp](https://github.com/user-attachments/assets/d8e1f002-9568-4f90-9e1c-71abb1faf198)
 
 - Login
   
