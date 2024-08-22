@@ -38,7 +38,8 @@ The application requires the following configurations:
 - Access Token: Obtain a Genius API key from `https://genius.com/api-clients`.
 
 ## Data Flow
-![Screenshot 2023-10-09 005237](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/18b17201-6f68-43b4-9b8e-482faf9b0f7e)
+![flow](https://github.com/user-attachments/assets/db94896c-3c8b-43f1-93ce-7bd3e22f03f3)
+
 
 
 ## Usage
@@ -52,6 +53,10 @@ The application requires the following configurations:
 - Signup
 
 ![Screenshot 2023-10-08 121419](https://github.com/Shashanktriathi1703/Music-Extractor/assets/105815482/857844e6-5e73-4e68-a75e-731fb73ab2f9)
+
+- OTP
+![otp](https://github.com/user-attachments/assets/d8e1f002-9568-4f90-9e1c-71abb1faf198)
+
 
 - Login
   
