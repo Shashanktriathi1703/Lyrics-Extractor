@@ -1,6 +1,6 @@
 # Lyrics-Extractor
 
-Lyrics-Extractor is a Python application that utilizes Python Tkinter for the user interface, MySQL for database connectivity, and the Genius API for music extraction. This application allows users to sign up, log in, and access music-related information using the Genius API.
+Lyrics-Extractor is an innovative Python application that boasts a user-friendly interface designed with Tkinter, enabling seamless interaction for users. It also incorporates MySQL database connectivity, allowing for efficient data management and retrieval. Additionally, the application utilizes the Genius API to access a comprehensive range of music data, enhancing the overall user experience. To ensure security and user privacy, individuals can sign up for the application and log in by using one-time password (OTP) authentication. This feature facilitates a secure access point to a wealth of music-related information, making it a valuable tool for music lovers and enthusiasts alike.
 
 ## Features
 
